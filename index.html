@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">Gif To Png</div>
+
+    <input type="file" id="image-input" accept="image/*" style="display: none;">
+
+    <div class="content" id="app">
+        <br><br>
+        <center> No Gif Selected .... <br><br><small style="color: rgb(6, 173, 62);">Please Select <b>Menu > Add
+                    Photo</b></small></center>
+        <br><br>
+    </div>
+
+    <div class="content" id="enterdet" style="display: none;z-index: 2">
+        <br><br>
+        <div style="margin: 0px auto; font-size: 14px; width:85%">
+            Width:
+            <input type="text" id="dwidth" class="focusable" tabindex="0" placeholder="240"> px
+            <br>
+            Height:
+            <input type="text" id="dheight" class="focusable" tabindex="1" placeholder="320"> px
+        </div>
+        <br><br>
+    </div>
+
+
+    <div class="menubar" style="display: none;" id="menubar">
+        <div class="menuelement" onclick="document.getElementById('image-input').click()" tabindex="0">Add Photo</div>
+        <div class="menuelement" tabindex="1" onclick="help()">Help</div>
+        <div class="menuelement" tabindex="2" onclick="about()">About</div>
+        <div class="menuelement" tabindex="3" onclick="window.close()">Exit</div>
+    </div>
+
+
+    <width:<input type="number" id="w"><br>height:<input type="number" id="h">
+        <button
+            onclick="X(document.getElementById('icon56').src,document.getElementById('w').value,document.getElementById('h').value)">click</button>
+        <hr>
+        <img id="preview"></img>
+        <a id="dlbtn"> Download >> </a>
+        <img id="icon56" style="display: none;"></img>
+
+
+
+        <div class="footer">
+            <div class="footerelement">Menu</div>
+            <div class="footerelement">OK</div>
+            <div class="footerelement">Exit</div>
+        </div>
+        <script type="text/javascript" src="./libgif.js"></script>
+        <script type="text/javascript" src="./rubbable.js"></script>
+        <script src="https://static.kaiads.com/ads-sdk/ads-sdk.v5.min.js"></script>
+        <script src="kaiads.v5.min.js"></script>
+        <script src="script.js"></script>
+        <script>
+            document.addEventListener('keyup', () => {
+                getKaiAd({
+                    publisher: '080b82ab-b33a-4763-a498-50f464567e49',
+                    app: 'Gif_Extractor',
+                    slot: 'Gif_Extractor',
+                    onerror: err => console.error('Custom catch:', err),
+                    onready: ad => {
+                        ad.call('display');
+                    }
+                });
+            });
+        </script>
+</body>
+
+</html>

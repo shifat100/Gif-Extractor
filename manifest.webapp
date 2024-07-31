@@ -1,0 +1,25 @@
+{
+    "version": "1.0.0",
+    "name": "Gif Extractor",
+    "description": "Gif Extractor, Gif To Png, Extract and View Gif One By One, Click Menu CLick Add Photo Slide Photo By Left/Right Arrow Key And Save As Png,Extract Png, Use Another Photo Resizer Tool For Resize Photo, Free Kaios App by Shifat100",
+    "launch_path": "/index.html",
+    "icons": {
+        "56": "/icons/ic-56.png",
+        "112": "/icons/ic-112.png",
+        "128": "/icons/ic-128.png"
+    },
+    "fullscreen": true,
+    "developer": {
+        "name": "Shifat100"
+    },
+    "locales": {
+        "en-US": {
+            "name": "Gif Extractor",
+            "subtitle": "Extract Png",
+            "description": "Gif Extractor,Extract Png, Gif To Png, Extract and View Gif One By One, Click Menu CLick Add Photo Slide Photo By Left/Right Arrow Key And Save As Png, Use Another Photo Resizer Tool For Resize Photo, Free Kaios App by Shifat100"
+        }
+    },
+    "default_locale": "en-US",
+    "cursor": false,
+    "type": "web"
+}
